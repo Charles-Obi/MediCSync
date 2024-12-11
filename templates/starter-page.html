@@ -63,34 +63,20 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="{% url 'index' %}">Home<br></a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'services' %}">Services</a></li>
-            <li><a href="{% url 'departments' %}">Departments</a></li>
-            <li><a href="{% url 'doctors' %}">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
+              <li><a href="{% url 'index' %}">Home<br></a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'services' %}">Services</a></li>
+              <li><a href="{% url 'departments' %}">Departments</a></li>
+              <li><a href="{% url 'doctors' %}">Doctors</a></li>
+              <li><a href="{% url 'gallery' %}">Gallery</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+              <li><a href="{% url 'upload' %}">Upload Doctor</a></li>
+              <li><a href="{% url 'image' %}">Other Doctor</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
+        <a class="cta-btn d-none d-sm-block" href="{% url 'appointment' %}">Make an Appointment</a>
 
       </div>
 
@@ -151,25 +137,14 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
+      <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Referral hospitals in Partnership</h4>
           <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="#">Kenyatta National Hospital</a></li>
+            <li><a href="#">Moi Teaching and Referral Hospital</a></li>
+            <li><a href="#">Nairobi Hospital</a></li>
+            <li><a href="#">Coast General</a></li>
+            <li><a href="#">National Spinal Injury Referral Hospital</a></li>
           </ul>
         </div>
 
