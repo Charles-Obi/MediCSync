@@ -23,4 +23,9 @@ urlpatterns = [
     path('deletecontact/<int:id>', views.deletecontact),
     path('uploadimage/', views.upload_image, name='upload'),
     path('showimage/', views.show_image, name='image'),
+
+    #Mpesa API urls
+    path('pay/', views.pay, name='pay'),
+    path('stk/', views.stk, name='stk'),
+    path('token/', views.token, name='token'),
 ]
